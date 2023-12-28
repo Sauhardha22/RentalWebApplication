@@ -28,6 +28,9 @@ class Vehicle(models.Model):
     def __str__(self):
         return self.name
 
+class Test(models.Model):
+    pass
+
 class Payment(models.Model):
     payment_id = models.AutoField(primary_key=True)
     amount = models.DecimalField(max_digits=255,decimal_places=2)
